@@ -14,6 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -23,7 +26,7 @@
                 <img src="assets/logo.png" alt="Skapersøk-logo" class="basicImg">
                 <div>
                     <h1>Skapersøk</h1>
-                    <p class="tagline">Enkelt inventar + søk for skapere</p>
+                    <p class="tagline">Enkelt inventar søk for enver skaper ✨</p>
                 </div>
             </div>
             <a class="cta-link" href="https://github.com/Skapersok">Se på GitHub</a>
@@ -32,7 +35,7 @@
 
     <main class="container">
         <section class="intro card reveal">
-            <p class="eyebrow">ÅPEN KILDEKODE</p>
+            <p class="eyebrow">INTRODUKSJON</p>
             <h2>Bygget for verksteder, skoler og kreative miljøer.</h2>
             <p>Skapersøk er et system for inventarhåndtering og søk, laget for skapere, butikker, skoler og verksteder.
                 Appen er utviklet med fokus på enkel bruk, samtidig som systemet er fleksibelt og kraftig.
@@ -44,16 +47,32 @@
                 <h3>Kostnad</h3>
                 <p>Skapersøk er helt gratis å bruke 🎉, både for private og offentlige brukere. <br><br><b>Vi tilbyr
                         også
-                        profesjonell
-                        betalt hjelp med oppsettning og tilpasning av systemet for organisasjoner.</b> <br><br> Kontakt:
+                        profesjonell hjelp med oppsettning og tilpasning av systemet for organisasjoner.</b> <br><br>
+                    Kontakt:
                     <a href="mailto:trym@bringsrud.com">trym@bringsrud.com</a>
                 </p>
             </section>
 
             <section class="card reveal">
-                <h3>Åpen kildekode</h3>
-                <p>Skapersøk er åpen kildekode. Utforsk <a href="https://github.com/Skapersok">GitHub-repositoriene
+                <h3>Produkter</h3>
+                <p>Serveren bak Skapersøk er åpen kildekode. Utforsk <a
+                        href="https://github.com/Skapersok">GitHub-repositoriene
                         våre</a>!</p>
+                <p><br>Vi har også utviklet en egen Android og WEB-app:</p>
+                <div class="product-buttons" aria-label="Nedlastingslenker for appene">
+                    <a class="product-btn product-btn-play"
+                        href="https://play.google.com/store/apps/details?id=no.skapersok.app"
+                        aria-label="Get it on Google Play for Skapersøk">
+                        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                            alt="Get it on Google Play" loading="lazy">
+                    </a>
+                    <a class="product-btn product-btn-web" href="/app" aria-label="Open Skapersøk WEB-app">
+                        <span class="product-btn-icon" aria-hidden="true">
+                            <i class="fa-solid fa-globe"></i>
+                        </span>
+                        <span> WEB-app</span>
+                    </a>
+                </div>
             </section>
         </section>
 
@@ -65,9 +84,7 @@
                 <div class="system-step-content">
                     <div>
                         <h4>Treet</h4>
-                        <p>I Skapersøk er alt organisert i et hierarkisk tre av "Crates". Hver boks i treet
-                            representerer en
-                            crate.</p>
+                        <p>I Skapersøk er alt organisert i et hierarkisk tre av bokser.</p>
                     </div>
                     <figure class="system-media" aria-label="Illustrasjon av trestruktur">
                         <img src="assets/imgs/tree_structure.png" alt="Trestruktur i Skapersøk" loading="lazy">
@@ -79,14 +96,14 @@
                 <p class="step-index">02</p>
                 <div class="system-step-content">
                     <div>
-                        <h4>Alt er en "crate"</h4>
-                        <p>Alt i Skapersøk er en "Crate". En crate kan være noe fysisk, som en hylle, etasje, rom eller
+                        <h4>Alt er en boks</h4>
+                        <p>Alt i Skapersøk er en boks. En boks kan være noe fysisk, som en hylle, etasje, rom eller
                             en
                             boks med knapper. Men det må ikke være fysisk; du kan for eksempel organisere klær etter
                             type.</p>
                     </div>
-                    <figure class="system-media" aria-label="Illustrasjon som forklarer crates">
-                        <img src="assets/imgs/sokker.png" alt="Eksempel på hva en crate kan være" loading="lazy">
+                    <figure class="system-media" aria-label="Illustrasjon som forklarer bokser">
+                        <img src="assets/imgs/sokker.png" alt="Eksempel på hva en boks kan være" loading="lazy">
                     </figure>
                 </div>
             </article>
@@ -96,8 +113,8 @@
                 <div class="system-step-content">
                     <div>
                         <h4>Plasseringskoder</h4>
-                        <p>Hver crate har en egen plasseringskode som består av koden til craten og alle overordnede
-                            crates.
+                        <p>Hver boks har en egen plasseringskode som består av koden til boksen og alle overordnede
+                            bokser.
                             For eksempel vil plasseringskoden bindersen på bilde være <strong>A-B-BIN</strong>. Kodene
                             gjør
                             det
