@@ -49,6 +49,10 @@
         justify-content: space-between;
     }
 
+    .github-btn {
+        display: none;
+    }
+
     .header-actions .product-btn {
         width: auto;
     }
