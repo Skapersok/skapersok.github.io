@@ -71,6 +71,10 @@
         min-height: 120px;
     }
 
+    .github-btn {
+        display: none;
+    }
+
     .product-btn {
         width: 100%;
     }
