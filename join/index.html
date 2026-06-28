@@ -112,11 +112,11 @@
 <body>
     <main class="card">
         <h1>Åpner Skapersøk</h1>
-        <p>Vi prøver å åpne appen automatisk. Hvis ingenting skjer, velg et alternativ under.</p>
+        <p>Vi sender deg videre til riktig versjon av Skapersøk.</p>
         <p class="status" id="statusText" aria-live="polite">Klargjører...</p>
 
         <section class="actions" aria-label="Alternativer">
-            <a class="btn btn-primary" href="/app">Gå til web-appen</a>
+            <a class="btn btn-primary" href="/app" id="web-app-button">Gå til web-appen</a>
             <a class="btn btn-outline" href="https://play.google.com/store/apps/details?id=no.skapersok.app">
                 Last ned Android-app
             </a>
@@ -124,25 +124,47 @@
     </main>
 
     <script>
+        const webAppButton = document.getElementById("web-app-button");
         const statusText = document.getElementById("statusText");
         const params = new URLSearchParams(window.location.search);
 
-        const ip = params.get("ip");
-        const port = params.get("port") || "80";
-        const scheme = params.get("scheme") || "http";
+        const serverUrl = params.get("url");
+        const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
-        if (ip) {
-            statusText.textContent = "Prøver å åpne appen...";
-            const url = `skapersok://join?ip=${ip}&port=${port}&scheme=${scheme}`;
-            window.location.href = url;
+        if (serverUrl) {
+            const encodedServerUrl = encodeURIComponent(serverUrl);
+            const webAppUrl = `/app/#/join?url=${encodedServerUrl}`;
 
-            // fallback after 2 seconds
-            setTimeout(() => {
-                statusText.textContent = "Fant ikke appen. Sender deg til Google Play...";
-                window.location.href = "https://play.google.com/store/apps/details?id=no.skapersok.app";
-            }, 2000);
+            webAppButton.href = webAppUrl;
+
+            if (isMobile) {
+                let didLeavePage = false;
+
+                const markPageHidden = () => {
+                    if (document.hidden) didLeavePage = true;
+                };
+
+                document.addEventListener("visibilitychange", markPageHidden);
+
+                statusText.textContent = "Prøver å åpne mobilappen...";
+                window.location.href = `skapersok://join?url=${encodedServerUrl}`;
+
+                // If the app actionsheet is not opened within 1.8 seconds, redirect to the web app instead
+                setTimeout(() => {
+                    document.removeEventListener("visibilitychange", markPageHidden);
+
+                    if (!didLeavePage && !document.hidden) {
+                        statusText.textContent = "Åpner web-appen...";
+                        window.location.href = webAppUrl;
+                    }
+                }, 1800);
+            } else {
+                statusText.textContent = "Åpner web-appen...";
+                window.location.href = webAppUrl;
+            }
         } else {
             statusText.textContent = "Mangler koblingsdata. Du kan bruke web-appen i stedet.";
+            webAppButton.href = "/app/";
         }
     </script>
 </body>
