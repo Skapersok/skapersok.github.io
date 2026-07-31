@@ -273,6 +273,20 @@
     border-color: #5f7fe0;
 }
 
+.product-btn-soft-green {
+    color: #f7f9ff;
+    background-color: #549E54;
+    box-shadow: 0 8px 18px rgba(26, 45, 110, 0.32);
+    font-weight: 700;
+    min-height: 44px;
+    border-radius: 999px;
+}
+
+.product-btn-soft-green:hover {
+    color: #ffffff;
+    background-color: #2ebc7e;
+}
+
 .system-section {
     margin-top: 26px;
 }
