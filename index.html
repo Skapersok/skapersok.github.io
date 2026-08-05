@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Skapersøk er et enkelt og åpent system for inventar og søk, laget for skapere, skoler og verksteder." />
+        content="Skapersøk er et enkelt og fleksibelt system for inventar og søk, laget for skapere, skoler og verksteder." />
     <meta name="theme-color" content="#0f1216" />
     <title>Skapersøk</title>
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -23,11 +23,12 @@
                 <img src="assets/logo.png" alt="Skapersøk-logo" class="basicImg">
                 <div>
                     <h1>Skapersøk</h1>
-                    <p class="tagline">Enkelt inventar søk for enver skaper ✨</p>
+                    <p class="tagline">Enkelt inventar søk for enhver skaper ✨</p>
                 </div>
             </div>
             <div class="header-actions">
-                <a class="product-btn product-btn-soft" href="/app" aria-label="Åpne Skapersøk WEB-app">
+                <a class="product-btn product-btn-soft" href="https://app.skapersok.no"
+                    aria-label="Åpne Skapersøk WEB-app">
                     Åpne webapp
                 </a>
                 <a class="product-btn" href="https://docs.skapersok.no" aria-label="Åpne dokumentasjon for Skapersøk">
@@ -91,21 +92,64 @@
         <section class="info-band" aria-label="Kort om Skapersøk">
             <article class="card info-panel intro">
                 <h2>Bygget for deg 🫵</h2>
-                <p>Skapersøk er bygge for deg, enten du driver skaperverksted, bedrift, hobbyrom eller bare er
+                <p>Skapersøk er bygget for deg, enten du driver skaperverksted, bedrift, hobbyrom eller bare er
                     privatperson.
-                    <br>Uansett hva, <b>Skapersøk gjør inventar enkelt</b>: slutt på leting, slutt på sløs,
+                    <br>Uansett hva, <b>Skapersøk gjør inventar enkelt</b>: slutt på leting, slutt på sløsing,
                     slutt på forvirring.
                 </p>
             </article>
 
             <article class="card info-panel info-panel-accent">
-                <h3>Gratis 👌</h3>
-                <p>Skapersøk er <b>gratis å bruke for private brukere</b>🎉.</p>
-                <p>Er du en <b>bedrift eller organisasjon</b> tilbyr vi profesjonell hjelp med oppsett, migrering og
-                    tilpasning.<br>
+                <h3>Gratis for privat bruk 👌</h3>
+                <p>Skapersøk er <b>gratis for privat bruk og hobbyprosjekter</b>🎉.</p>
+                <p>Er du en <b>bedrift eller organisasjon</b> tilbyr vi organisasjonslisens.<br>
                     👉👉<a href="mailto:trym@bringsrud.com">Kontakt på trym@bringsrud.com</a>👈👈
                 </p>
             </article>
+        </section>
+
+        <section class="license-compare" aria-labelledby="license-compare-heading">
+            <div class="features-head">
+                <p class="eyebrow">LISENSER</p>
+                <h2 id="license-compare-heading" class="section-title">Gratis vs. organisasjonslisens</h2>
+                <p class="features-lead">Velg den varianten som passer bruken din best.</p>
+            </div>
+
+            <div class="license-compare-grid">
+                <article class="license-card">
+                    <div class="license-card-header">
+                        <p class="license-badge license-badge-free">Gratis</p>
+                        <h2>For privatpersoner, hobbybruk og læringsprosjekter 🙍</h2>
+                    </div>
+                    <ul class="license-list">
+                        <li>Mobil- og webapp</li>
+                        <li>Selvhost dine <b>egne servere</b></li>
+                        <li><b>Søk, rediger og konfigurer i appen</b></li>
+                        <li>Sikkerhetskopier og serverinnstillinger</li>
+                        <li><b>API-tilgang</b> for ikke-kommersielle integrasjoner</li>
+                    </ul>
+                </article>
+
+                <article class="license-card license-card-accent">
+                    <div class="license-card-header">
+                        <p class="license-badge license-badge-paid">Organisasjonslisens</p>
+                        <h2>For skoler, verksteder og organisasjoner 🏢</h2>
+                        <p class="license-price">Fra 2 900 kr/år</p>
+                    </div>
+                    <ul class="license-list">
+                        <li><b>Lisensiert bruk av Skapersøk i organisasjonen</b></li>
+                        <li>Profesjonell support</li>
+                        <li>Oppsett og migrering</li>
+                        <li>Valgfri hosting av oss</li>
+                        <li>Tilpassede løsninger etter behov</li>
+                        <li>Bidrar til fremtidig utvikling og vedlikehold av Skapersøk</li>
+                    </ul>
+                    <a class="product-btn" href="mailto:trym@bringsrud.com"
+                        aria-label="Kontakt for organisasjonslisens">
+                        Kontakt for kjøp (trym@bringsrud.com)
+                    </a>
+                </article>
+            </div>
         </section>
 
         <section class="features" aria-labelledby="features-heading">
@@ -118,8 +162,8 @@
                 <article class="feature-card">
                     <div class="feature-copy">
                         <h3>Enkel bruk 🚀</h3>
-                        <p>Brukere trenger kunn å skanne en QR-kode for å komme i gang.
-                            <br><b>Ingen innstalasjoner, ingen registrering, ingen bogus.</b>
+                        <p>Brukere trenger kun å skanne en QR-kode for å komme i gang.
+                            <br><b>Ingen installasjoner, ingen registrering, ingen bogus.</b>
                         </p>
                     </div>
                     <figure class="feature-media" aria-label="Plassholder for bilde av onboarding">

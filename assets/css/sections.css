@@ -377,6 +377,10 @@
     margin-top: 34px;
 }
 
+.license-compare {
+    margin-top: 34px;
+}
+
 .features-head {
     margin-bottom: 14px;
 }
@@ -388,6 +392,65 @@
 .features-lead {
     margin: 0;
     color: color-mix(in srgb, var(--text), var(--text-soft) 30%);
+}
+
+.license-compare-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.license-card {
+    border: 1px solid color-mix(in srgb, var(--line), transparent 8%);
+    border-radius: 16px;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--surface), #fff 2%) 0%, color-mix(in srgb, var(--surface-strong), #fff 1%) 100%);
+    padding: 18px;
+}
+
+.license-card-accent {
+    background: linear-gradient(180deg, color-mix(in srgb, var(--accent), #0f1724 88%) 0%, color-mix(in srgb, var(--surface-strong), #0f1724 88%) 100%);
+}
+
+.license-card-header h3 {
+    margin: 6px 0 0;
+    font-size: 1.12rem;
+}
+
+.license-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+}
+
+.license-badge-free {
+    color: #9ef0c8;
+    background: color-mix(in srgb, #39d98a, var(--surface-strong) 82%);
+    border-color: color-mix(in srgb, #39d98a, var(--line) 55%);
+}
+
+.license-badge-paid {
+    color: #d1e5ff;
+    background: color-mix(in srgb, #6ba7ff, var(--surface-strong) 82%);
+    border-color: color-mix(in srgb, #6ba7ff, var(--line) 55%);
+}
+
+.license-list {
+    margin: 14px 0 0;
+    padding-left: 18px;
+    color: color-mix(in srgb, var(--text), var(--text-soft) 34%);
+    line-height: 1.7;
+}
+
+.license-card-accent .license-list {
+    color: color-mix(in srgb, #ffffff, var(--text-soft) 32%);
 }
 
 .features-grid {
@@ -507,12 +570,18 @@
 }
 
 @media (max-width: 980px) {
+
+    .license-compare-grid,
     .features-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
 @media (max-width: 640px) {
+    .license-compare {
+        margin-top: 26px;
+    }
+
     .features {
         margin-top: 26px;
     }
@@ -521,10 +590,12 @@
         font-size: xx-large;
     }
 
+    .license-compare-grid,
     .features-grid {
         grid-template-columns: 1fr;
     }
 
+    .license-card,
     .feature-media {
         min-height: 150px;
     }
