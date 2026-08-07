@@ -116,7 +116,7 @@
         <p class="status" id="statusText" aria-live="polite">Klargjører...</p>
 
         <section class="actions" aria-label="Alternativer">
-            <a class="btn btn-primary" href="/app" id="web-app-button">Gå til web-appen</a>
+            <a class="btn btn-primary" href="https://app.skapersok.no" id="web-app-button">Gå til web-appen</a>
             <a class="btn btn-outline" href="https://play.google.com/store/apps/details?id=no.skapersok.app">
                 Last ned Android-app
             </a>
@@ -133,7 +133,7 @@
 
         if (serverUrl) {
             const encodedServerUrl = encodeURIComponent(serverUrl);
-            const webAppUrl = `/app/#/join?url=${encodedServerUrl}`;
+            const webAppUrl = `https://app.skapersok.no/#/join?url=${encodedServerUrl}`;
 
             webAppButton.href = webAppUrl;
 
@@ -164,7 +164,7 @@
             }
         } else {
             statusText.textContent = "Mangler koblingsdata. Du kan bruke web-appen i stedet.";
-            webAppButton.href = "/app/";
+            webAppButton.href = "https://app.skapersok.no";
         }
     </script>
 </body>
