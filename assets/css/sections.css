@@ -163,12 +163,12 @@
 .info-panel {
     border: 1px solid color-mix(in srgb, var(--line), transparent 8%);
     border-radius: 16px;
-    background: linear-gradient(180deg, color-mix(in srgb, var(--surface), #fff 2%) 0%, color-mix(in srgb, var(--surface-strong), #fff 1%) 100%);
+    background: #1E2024;
     padding: 20px 22px;
 }
 
 .info-panel-accent {
-    background: linear-gradient(180deg, color-mix(in srgb, var(--accent), #0f1724 86%) 0%, color-mix(in srgb, var(--surface-strong), #0f1724 86%) 100%);
+    background: #21293A;
 }
 
 .intro {
@@ -303,7 +303,7 @@
     padding: 14px;
     border: 1px solid color-mix(in srgb, var(--line), transparent 8%);
     border-radius: 14px;
-    background: linear-gradient(180deg, color-mix(in srgb, var(--surface), #fff 2%) 0%, color-mix(in srgb, var(--surface-strong), #fff 1%) 100%);
+    background: #1E2024;
     margin-bottom: 12px;
 }
 
@@ -402,12 +402,12 @@
 .license-card {
     border: 1px solid color-mix(in srgb, var(--line), transparent 8%);
     border-radius: 16px;
-    background: linear-gradient(180deg, color-mix(in srgb, var(--surface), #fff 2%) 0%, color-mix(in srgb, var(--surface-strong), #fff 1%) 100%);
+    background: #1E2024;
     padding: 18px;
 }
 
 .license-card-accent {
-    background: linear-gradient(180deg, color-mix(in srgb, var(--accent), #0f1724 88%) 0%, color-mix(in srgb, var(--surface-strong), #0f1724 88%) 100%);
+    background: #21293A;
 }
 
 .license-card-header h3 {
@@ -465,7 +465,7 @@
 .feature-card {
     border: 1px solid color-mix(in srgb, var(--line), transparent 8%);
     border-radius: 16px;
-    background: linear-gradient(180deg, color-mix(in srgb, var(--surface), #fff 2%) 0%, color-mix(in srgb, var(--surface-strong), #fff 1%) 100%);
+    background: #1E2024;
     padding: 16px;
     display: grid;
     gap: 12px;
