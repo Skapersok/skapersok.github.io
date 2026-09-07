@@ -49,6 +49,10 @@
         justify-content: space-between;
     }
 
+    .docs-btn {
+        display: none;
+    }
+
     .github-btn {
         display: none;
     }
@@ -86,6 +90,10 @@
 
     .product-btn-play img {
         width: 170px;
+    }
+
+    .play-heading-btn {
+        display: block;
     }
 }
 

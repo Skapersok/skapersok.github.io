@@ -22,7 +22,6 @@
     inset: auto -80px -110px auto;
     width: 280px;
     height: 280px;
-    background: url("../logo.png") center / contain no-repeat;
     opacity: 0.12;
     pointer-events: none;
 }
@@ -567,6 +566,10 @@
 
 .phone-screen-title {
     font-size: x-large;
+}
+
+.play-heading-btn {
+    display: none;
 }
 
 @media (max-width: 980px) {
