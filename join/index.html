@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <title>Opening Skapersøk</title>
     <style>
         :root {
@@ -34,12 +35,7 @@
         }
 
         .card {
-            width: min(560px, 100%);
-            background: linear-gradient(180deg, var(--surface-strong) 0%, var(--surface) 100%);
-            border: 1px solid var(--line);
-            border-radius: 16px;
             padding: 28px;
-            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
         }
 
         h1 {
@@ -66,46 +62,6 @@
             grid-template-columns: 1fr;
             gap: 10px;
         }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 46px;
-            padding: 10px 16px;
-            border-radius: 10px;
-            border: 1px solid transparent;
-            text-decoration: none;
-            font-weight: 600;
-            transition: transform 120ms ease, border-color 120ms ease, background-color 120ms ease;
-        }
-
-        .btn:hover {
-            transform: translateY(-1px);
-        }
-
-        .btn-primary {
-            color: var(--text);
-            background: #172033;
-            border-color: var(--accent);
-        }
-
-        .btn-primary:hover {
-            background: #1f2b42;
-            border-color: var(--accent-soft);
-        }
-
-        .btn-outline {
-            color: var(--accent-soft);
-            border-color: var(--line);
-            background: transparent;
-        }
-
-        .btn-outline:hover {
-            border-color: var(--accent);
-            background: #172033;
-            color: var(--text);
-        }
     </style>
 </head>
 
@@ -116,8 +72,8 @@
         <p class="status" id="statusText" aria-live="polite">Klargjører...</p>
 
         <section class="actions" aria-label="Alternativer">
-            <a class="btn btn-primary" href="https://app.skapersok.no" id="web-app-button">Gå til web-appen</a>
-            <a class="btn btn-outline" href="https://play.google.com/store/apps/details?id=no.skapersok.app">
+            <a class="product-btn blue-btn" href="https://app.skapersok.no" id="web-app-button">Gå til web-appen</a>
+            <a class="product-btn outlined-btn" href="/android_beta/index.html">
                 Last ned Android-app
             </a>
         </section>
