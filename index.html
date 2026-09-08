@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -24,8 +26,7 @@
                 <h1>Skapersøk</h1>
             </div>
             <div class="header-actions">
-                <a class="product-btn product-btn-soft" href="https://app.skapersok.no"
-                    aria-label="Åpne Skapersøk WEB-app">
+                <a class="product-btn blue-btn" href="https://app.skapersok.no" aria-label="Åpne Skapersøk WEB-app">
                     Åpne webapp
                 </a>
                 <a class="product-btn product-btn-play play-heading-btn" href="/android_beta/index.html"
@@ -33,22 +34,21 @@
                     <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
                         alt="Get it on Google Play" loading="lazy">
                 </a>
-                <a class="product-btn docs-btn" href="https://docs.skapersok.no" aria-label="Åpne dokumentasjon for Skapersøk">
+                <a class="header-link" href="https://docs.skapersok.no" aria-label="Åpne dokumentasjon for Skapersøk">
                     Dokumentasjon
                 </a>
-                <a class="cta-link github-btn" href="https://github.com/Skapersok"
-                    aria-label="Utforsk kildekode på GitHub">
-                    <svg class="github-btn-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                        <path fill="currentColor"
-                            d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.06-.02-2.08-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.84 2.81 1.31 3.49 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.31-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.63-5.48 5.93.43.37.82 1.1.82 2.23 0 1.61-.01 2.91-.01 3.3 0 .32.21.69.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12Z" />
-                    </svg>
+                <a href="https://github.com/Skapersok" class="hide-on-mobile">
+                    <!-- GitHub logo, inverted to become white -->
+                    <img class="github-btn-icon"
+                        src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
+                        alt="Github logo" loading="lazy" width="35" height="35">
                 </a>
             </div>
         </div>
     </header>
 
     <main class="container">
-        <section class="showcase card" aria-labelledby="showcase-heading">
+        <section class="showcase top-section" aria-labelledby="showcase-heading">
             <p class="hero-brand">Skapersøk</p>
             <h2 id="showcase-heading" class="showcase-title">Ingen leter i 2026.</h2>
             <div class="showcase-grid">
@@ -78,11 +78,11 @@
                 </article>
             </div>
             <div class="product-buttons showcase-actions" aria-label="Nedlastingslenker for appene">
-                <a class="product-btn product-btn-soft-green" href="https://docs.skapersok.no/getting_started/"
+                <a class="product-btn green-btn" href="https://docs.skapersok.no/getting_started/"
                     aria-label="Kom i gang med Skapersøk">
-                    Sett i gang!
+                    Kom i gang
                 </a>
-                <a class="product-btn product-btn-play" href="/android_beta/index.html"
+                <a class="product-btn product-btn-play hide-on-mobile" href="/android_beta/index.html"
                     aria-label="Get it on Google Play for Skapersøk">
                     <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
                         alt="Get it on Google Play" loading="lazy">
@@ -90,137 +90,114 @@
             </div>
         </section>
 
-        <section class="info-band" aria-label="Kort om Skapersøk">
-            <article class="card info-panel intro">
-                <h2>Bygget for deg 🫵</h2>
+        <section class="card-grid info-grid" aria-label="Kort om Skapersøk">
+            <article class="card card-accent">
+                <h3>Bygget for deg 🫵</h3>
                 <p>Skapersøk er bygget for deg, enten du driver skaperverksted, bedrift, hobbyrom eller bare er
                     privatperson.
-                    <br>Uansett hva, <b>Skapersøk gjør inventar enkelt</b>: slutt på leting, slutt på sløsing,
-                    slutt på forvirring.
+                    <br><br>Skapersøk gjør inventar enkelt: <b>slutt på leting, sløsing og forvirring</b>.
                 </p>
             </article>
 
-            <article class="card info-panel info-panel-accent">
+            <article class="card license-card">
                 <h3>Gratis for privat bruk 👌</h3>
                 <p>Skapersøk er <b>gratis for privat bruk og hobbyprosjekter</b>🎉.</p>
-                <p>Er du en <b>bedrift eller organisasjon</b> tilbyr vi organisasjonslisens.<br>
-                    👉👉<a href="mailto:trym@bringsrud.com">Kontakt på trym@bringsrud.com</a>👈👈
+                <p>Er du en <b>bedrift eller organisasjon</b> tilbyr vi <a
+                        href="#license-section">organisasjonslisens</a>.<br>
                 </p>
             </article>
         </section>
 
-        <section class="license-compare" aria-labelledby="license-compare-heading">
-            <div class="features-head">
-                <h2 id="license-compare-heading" class="section-title">Gratis vs. organisasjonslisens</h2>
-            </div>
+        <h2 class="section-title">Hvorfor skapersøk?</h2>
+        <section class="card-grid features-grid">
+            <article class="card">
+                <div class="feature-copy">
+                    <h3>Enkel bruk 🚀</h3>
+                    <p>Brukere trenger kun å skanne QR-koden.</p>
+                </div>
+                <figure class="feature-media" aria-label="Plassholder for bilde av onboarding">
+                    <img src="assets/imgs/demo/qr_demo.gif" alt="QR-kode demo">
+                </figure>
+            </article>
 
-            <div class="license-compare-grid">
-                <article class="license-card">
-                    <div class="license-card-header">
-                        <p class="license-badge license-badge-free">Gratis</p>
-                        <h2>For privatpersoner, hobbybruk og læringsprosjekter 🙍</h2>
-                    </div>
-                    <ul class="license-list">
-                        <li>Mobil- og webapp</li>
-                        <li>Selvhost dine <b>egne servere</b></li>
-                        <li><b>Søk, rediger og konfigurer i appen</b></li>
-                        <li>Sikkerhetskopier og serverinnstillinger</li>
-                        <li><b>API-tilgang</b> for ikke-kommersielle integrasjoner</li>
-                    </ul>
-                </article>
+            <article class="card">
+                <div class="feature-copy">
+                    <h3>Enkel redigering ✏️</h3>
+                    <p>Rediger inventaret ditt i mobil- eller webappen.
+                    </p>
+                </div>
+                <figure class="feature-media" aria-label="Plassholder for bilde av onboarding">
+                    <img src="assets/imgs/demo/edit_example.jpg" alt="Redigering demo">
+                </figure>
+            </article>
 
-                <article class="license-card license-card-accent">
-                    <div class="license-card-header">
-                        <p class="license-badge license-badge-paid">Organisasjonslisens</p>
-                        <h2>For skoler, verksteder og organisasjoner 🏢</h2>
-                        <p class="license-price">Fra 2 900 kr/år</p>
-                    </div>
-                    <ul class="license-list">
-                        <li><b>Lisensiert bruk av Skapersøk i organisasjonen</b></li>
-                        <li>Profesjonell support</li>
-                        <li>Oppsett og migrering</li>
-                        <li>Valgfri hosting av oss</li>
-                        <li>Tilpassede løsninger etter behov</li>
-                        <li>Bidrar til fremtidig utvikling og vedlikehold av Skapersøk</li>
-                    </ul>
-                    <a class="product-btn" href="mailto:trym@bringsrud.com"
-                        aria-label="Kontakt for organisasjonslisens">
-                        Kontakt for kjøp (trym@bringsrud.com)
+            <article class="card">
+                <div class="feature-copy">
+                    <h3>Avansert adminkontroll 🛠️</h3>
+                    <p>Enkel administrering av brukere og innstillinger.
+                    </p>
+                </div>
+                <figure class="feature-media" aria-label="Plassholder for bilde av lokasjon og spor">
+                    <img src="assets/imgs/demo/admin_panel_example.jpg" alt="Adminpanel">
+                </figure>
+            </article>
+
+            <article class="card card-accent card-wide">
+                <div class="feature-copy">
+                    <h3>Lokal kjøring 🖥️</h3>
+                    <p>Vi er hverken interessert i eller burde ha tilgang til din informasjon. Derfor forblir all data
+                        lokalt på din maskin hvor Skapersøk kjører helt lokalt.</p>
+                </div>
+            </article>
+
+
+            <article class="card card-wide">
+                <div class="feature-copy">
+                    <h3>Omfattende dokumentasjon 📚</h3>
+                    <p>Skapersøk er godt dokumentert med en omfattende brukerveiledning og API-dokumentasjon.</p>
+                    <a class="product-btn outlined-btn wide-btn" href="https://docs.skapersok.no" target="_blank"
+                        aria-label="Åpne dokumentasjon for Skapersøk">
+                        Åpne dokumentasjon <span class="material-symbols-outlined">open_in_new</span>
                     </a>
-                </article>
-            </div>
+                </div>
+
+            </article>
         </section>
 
-        <section class="features" aria-labelledby="features-heading">
-            <div class="features-head">
-                <h2 id="features-heading" class="section-title">Se hva Skapersøk kan gjøre for deg</h2>
-            </div>
+        <h2 class="section-title" id="license-section">Lisens</h2>
+        <section class="card-grid license-grid">
+            <article class="card">
+                <div class="license-card-header">
+                    <h2>For privatpersoner og hobbybruk 🙍</h2>
+                    <p class="license-price">Gratis!</p>
+                </div>
+                <ul class="license-list">
+                    <li>Mobil- og webapp</li>
+                    <li>Selvhost dine <b>egne servere</b></li>
+                    <li><b>Søk, rediger og konfigurer i appen</b></li>
+                    <li>Sikkerhetskopier og serverinnstillinger</li>
+                    <li><b>API-tilgang</b> for ikke-kommersielle integrasjoner</li>
+                </ul>
+            </article>
 
-            <div class="features-grid">
-                <article class="feature-card">
-                    <div class="feature-copy">
-                        <h3>Enkel bruk 🚀</h3>
-                        <p>Brukere trenger kun å skanne en QR-kode for å komme i gang.
-                            <br><b>Ingen installasjoner, ingen registrering, ingen bogus.</b>
-                        </p>
-                    </div>
-                    <figure class="feature-media" aria-label="Plassholder for bilde av onboarding">
-                        <img src="assets/imgs/demo/qr_demo.gif" alt="QR-kode demo">
-                    </figure>
-                </article>
-
-                <article class="feature-card">
-                    <div class="feature-copy">
-                        <h3>Enkel redigering ✏️</h3>
-                        <p>Rediger inventaret ditt enkelt direkte i mobil- eller webappen. <b>Ingen uforståelige menyer
-                                eller
-                                endeløse regneark.</b>
-                        </p>
-                    </div>
-                    <figure class="feature-media" aria-label="Plassholder for bilde av onboarding">
-                        <img src="assets/imgs/demo/edit_example.jpg" alt="Redigering demo">
-                    </figure>
-                </article>
-
-                <article class="feature-card">
-                    <div class="feature-copy">
-                        <h3>Avansert adminkontroll 🛠️</h3>
-                        <p>Som administrator får du alle verktøyene du trenger for å administrere brukere,
-                            sikkerhetsinnstillinger og systemkonfigurasjon.
-                        </p>
-                    </div>
-                    <figure class="feature-media" aria-label="Plassholder for bilde av lokasjon og spor">
-                        <img src="assets/imgs/demo/admin_panel_example.jpg" alt="Adminpanel">
-                    </figure>
-                </article>
-
-                <article class="feature-card feature-card-wide">
-                    <div class="feature-copy">
-                        <h3>Skapersøk er der du vil 🫵✨</h3>
-                        <p>Skapersøkserveren kan enten kjøre:</p>
-                        <ul class="feature-list">
-                            <li>
-                                <span class="feature-li-icon feature-li-icon-local" aria-hidden="true">
-                                    <svg viewBox="0 0 24 24" focusable="false">
-                                        <path fill="currentColor"
-                                            d="M3 11.2 12 4l9 7.2V21a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1v-9.8Z" />
-                                    </svg>
-                                </span>
-                                <span><b>Lokalt</b>, slik at kun de på ditt nettverk får tilgang</span>
-                            </li>
-                            <li>
-                                <span class="feature-li-icon feature-li-icon-cloud" aria-hidden="true">
-                                    <svg viewBox="0 0 24 24" focusable="false">
-                                        <path fill="currentColor"
-                                            d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm7.92 9h-3.08a15.6 15.6 0 0 0-1-4 8.04 8.04 0 0 1 4.08 4ZM12 4.04c.93 1.1 1.66 2.9 1.92 4.96h-3.84c.26-2.06.99-3.86 1.92-4.96ZM4.08 13h3.08a15.6 15.6 0 0 0 1 4 8.04 8.04 0 0 1-4.08-4Zm3.08-2H4.08a8.04 8.04 0 0 1 4.08-4 15.6 15.6 0 0 0-1 4Zm2.92 0c.3-2.6 1.2-4.78 2.44-5.85C13.76 6.22 14.66 8.4 14.96 11h-4.88Zm4.88 2c-.3 2.6-1.2 4.78-2.44 5.85-1.24-1.07-2.14-3.25-2.44-5.85h4.88Zm.88 4a15.6 15.6 0 0 0 1-4h3.08a8.04 8.04 0 0 1-4.08 4Z" />
-                                    </svg>
-                                </span>
-                                <span><b>I skyen</b>, få tilgang til dataene dine overalt</span>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
+            <article class="card card-accent license-card license-card-organization">
+                <div class="license-card-header">
+                    <h2>For skoler, verksteder og organisasjoner 🏢</h2>
+                    <p class="license-price">Fra 2 900 kr/år</p>
+                </div>
+                <ul class="license-list">
+                    <li><b>Lisensiert bruk av Skapersøk i organisasjonen</b></li>
+                    <li>Profesjonell support</li>
+                    <li>Oppsett og migrering</li>
+                    <li>Valgfri hosting av oss</li>
+                    <li>Tilpassede løsninger etter behov</li>
+                    <li>Bidrar til fremtidig utvikling og vedlikehold av Skapersøk</li>
+                </ul>
+                <a class="product-btn green-btn wide-btn" href="mailto:trym@bringsrud.com"
+                    aria-label="Kontakt for organisasjonslisens">
+                    Kontakt oss
+                </a>
+            </article>
         </section>
     </main>
 

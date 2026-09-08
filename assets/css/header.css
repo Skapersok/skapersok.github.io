@@ -13,12 +13,14 @@
     align-items: center;
     justify-content: space-between;
     gap: 24px;
+    min-width: 0;
 }
 
 .brand {
     display: flex;
     align-items: center;
     gap: 16px;
+    min-width: 0;
 }
 
 .basicImg {
@@ -28,61 +30,25 @@
     object-fit: contain;
 }
 
-.tagline {
-    margin: 2px 0 0;
-    color: var(--text-soft);
-    font-size: 0.8rem;
-    letter-spacing: 0.08em;
-}
-
-.cta-link {
-    color: var(--accent-soft);
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    padding: 8px 14px;
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: border-color 160ms ease, background-color 160ms ease, color 160ms ease;
-}
-
-.cta-link:hover {
-    border-color: var(--accent);
-    background-color: #172033;
-    color: var(--text);
-}
-
 .header-actions {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+    min-width: 0;
 }
 
-.header-actions .product-btn {
-    min-height: 40px;
+.header-actions .header-link {
     color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.github-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    color: #f3f6ff;
-    background: #1f2937;
-    border-color: #3a4558;
-    font-weight: 600;
-}
-
-.github-btn:hover {
-    color: #ffffff;
-    background: #2b3648;
-    border-color: #4a5870;
-}
+/* GitHub button styles */
 
 .github-btn-icon {
-    width: 16px;
-    height: 16px;
-    display: block;
+    filter: brightness(0) invert(1);
+}
+
+.github-btn-icon:hover {
+    filter: brightness(0) invert(0.7);
 }

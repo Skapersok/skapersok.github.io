@@ -9,6 +9,7 @@
     --accent-soft: #AFC0F5;
     --radius: 12px;
     --max-width: 1360px;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -22,6 +23,10 @@ body {
 }
 
 body {
+    overflow-x: hidden;
+}
+
+body {
     background: radial-gradient(1000px 500px at 20% -10%, #1a2230 0%, var(--bg) 55%);
     color: var(--text);
     font-family: "Montserrat", sans-serif;
@@ -31,7 +36,7 @@ body {
 }
 
 .container {
-    width: min(var(--max-width), 95%);
+    width: min(var(--max-width), calc(100% - 32px));
     margin: 0 auto;
 }
 
@@ -43,6 +48,7 @@ a {
     color: var(--accent);
     text-decoration-thickness: 1px;
     text-underline-offset: 3px;
+    overflow-wrap: anywhere;
 }
 
 h1 {
@@ -59,11 +65,4 @@ h3 {
 h4 {
     margin: 0 0 6px;
     font-size: 1rem;
-}
-
-.tagline,
-.eyebrow,
-.step-index,
-.system-media span {
-    font-family: "JetBrains Mono", monospace;
 }

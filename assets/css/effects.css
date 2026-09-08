@@ -6,7 +6,8 @@
 
     .showcase-grid {
         grid-template-columns: 1fr;
-        overflow: hidden;
+        gap: 24px;
+        overflow: visible;
     }
 
     .showcase-item:nth-child(1),
@@ -21,7 +22,18 @@
     .showcase-item:nth-child(3) .showcase-media {
         height: auto;
         width: min(100%, 270px);
+        aspect-ratio: 9 / 16;
         transform: none;
+    }
+
+    .showcase-media img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .showcase-scroll img {
+        height: auto;
+        min-height: 100%;
     }
 
     .showcase-actions {
@@ -33,27 +45,26 @@
         gap: 12px;
     }
 
-    .info-panel {
-        padding: 16px;
-    }
-
     .header-inner {
         min-height: auto;
         padding: 16px 0;
         flex-direction: column;
         align-items: flex-start;
+        gap: 14px;
     }
 
     .header-actions {
         width: 100%;
         justify-content: space-between;
+        gap: 10px;
+        flex-wrap: wrap;
     }
 
-    .docs-btn {
+    .header-link {
         display: none;
     }
 
-    .github-btn {
+    .hide-on-mobile {
         display: none;
     }
 
@@ -61,27 +72,25 @@
         width: auto;
     }
 
-    .system-step {
-        grid-template-columns: 1fr;
-        gap: 4px;
-        padding: 12px;
+    .brand {
+        gap: 12px;
     }
 
-    .system-step-content {
-        grid-template-columns: 1fr;
+    .basicImg {
+        width: 44px;
+        height: 44px;
     }
 
-    .system-media {
-        min-height: 120px;
+    .card {
+        padding: 18px;
     }
 
-    .github-btn {
-        display: none;
+    .site-footer p {
+        line-height: 1.8;
     }
 
     .product-btn {
         width: 100%;
-        color: white !important;
     }
 
     .product-btn-play {
@@ -94,11 +103,5 @@
 
     .play-heading-btn {
         display: block;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .product-btn {
-        transition: none;
     }
 }
